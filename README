@@ -1,0 +1,49 @@
+## Instalação
+Versão do node utilizada 18.16.0
+
+npm install
+yarn
+
+## Banco de dados
+Crie a database lumi (Conforme DB_NAME no arquivo .env)
+Configure o arquivo .env conforme a conexão do banco
+
+Aplique a mesma configuração no arquivo sequelizeConfig.json para rodar as migrations
+
+## Executar as migrations
+npm run migration-run
+yarn migration-run
+
+## Executar a aplicação
+npm run dev
+yarn dev
+
+## Estrutura de diretórios
+├── src/                              # Código-fonte do aplicativo
+│   ├── config/                       # Configurações do aplicativo
+│   │   ├── database/                 # Configurações do banco de dados
+│   │   │   ├── migrations/           # Migrations do banco de dados
+│   │   │   ├── database.ts           # Configuração do banco de dados
+│   │   │   └── sequelizeConfig.json  # Configurações do Sequelize para migrations
+│   │   └── env.ts                    # Configurações de variáveis de ambiente
+│   ├── controllers/                  # Controladores da aplicação
+│   ├── models/                       # Modelos de dados
+│   ├── routes/                       # Definições das rotas da API
+│   ├── services/                     # Lógica de negócios e serviços
+│   ├── tests/                        # Testes unitários e de integração
+│   ├── types/                        # Tipos TypeScript personalizados
+│   ├── utils/                        # Funções utilitárias
+│   │   ├── base/                     # Estruturas bases
+│   │   ├── functions/                # Funções utilitárias
+│   │   └── uploads/                  # Upload de arquivos
+│   └── app.ts                        # Ponto de entrada do aplicativo
+├── .env                              # Arquivo para variáveis de ambiente
+├── .gitignore                        # Arquivo que especifica quais arquivos/diretórios ignorar no Git
+├── .prettierrc                       # Configurações do Prettier para formatação de código
+├── eslint.config.mjs                 # Configurações do ESLint para análise de código
+├── jest.config.js                    # Configurações do Jest para testes
+├── package.json                      # Dependências e scripts do projeto
+├── README.md                         # Documentação do projeto
+├── tsconfig.build.json               # Configurações do TypeScript para build
+├── tsconfig.json                     # Configurações gerais do TypeScript
+└── yarn.lock                         # Lockfile gerado pelo Yarn para gerenciar dependências

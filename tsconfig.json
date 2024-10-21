@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES6",
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "incremental": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "strictBindCallApply": true,
+        "noFallthroughCasesInSwitch": true,
+        "paths": {
+            "@config/*": ["config/*"],
+            "@controllers/*": ["controllers/*"],
+            "@models/*": ["models/*"],
+            "@routes/*": ["routes/*"],
+            "@services/*": ["services/*"],
+            "@tests/*": ["tests/*"],
+            "@utils/*": ["utils/*"]
+        }
+    }
+}
